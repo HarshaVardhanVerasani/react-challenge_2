@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 function App() {
+  const [isClicked, setIsClicked] = useState(false);
   const appRef = useRef();
   const popRef = useRef();
-  const [isClicked, setIsClicked] = useState(false);
-
+  
   useEffect(() => {
     const app = appRef.current;
     const popUp = popRef.current;
